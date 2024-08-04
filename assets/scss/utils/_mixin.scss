@@ -2,12 +2,12 @@
 // md 768px
 
 @mixin table {
-    @media (max-width: 786px){
+    @media (max-width: 768px){
         @content;
     }
 }
 @mixin mobile {
-    @media (max-with: 576px){
+    @media (max-width: 576px){
         @content;
     }
 }
