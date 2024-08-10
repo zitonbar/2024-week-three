@@ -1,10 +1,5 @@
-.logo {
-    background-image: url(/assets/images/logo-white.png);
-    background-size: contain;
-    // display: block;
-    width: 80px;
-    height: 48px;
-    text-indent: 101%;
-    overflow: hidden; 
-    white-space: nowrap;
+.banner-background {
+    background-image: url(/assets/images/home-header.png);
+    background-size: cover;
+    background-repeat: no-repeat;   
 }

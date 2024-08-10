@@ -1,0 +1,9 @@
+.btn {
+    width: 104px;
+    height: 41px;
+    font-size: $fs-5;
+    &-primary {
+        background: $primary-color;
+        color: $light-color;
+    }
+}
