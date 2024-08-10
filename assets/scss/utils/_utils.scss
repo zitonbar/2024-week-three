@@ -1,0 +1,57 @@
+// background
+.bg {
+    &-primary {
+        background: $primary-color;
+    }
+    &-secondary {
+        background: $secondary-color;
+    }
+}
+
+//color
+.text {
+    &-white {
+        color: $light-color;
+    }
+}
+
+// font-size
+.fs {
+    &-1 {
+        font-size: $fs-1;
+    }
+    &-2 {
+        font-size: $fs-2;
+    }
+    &-3 {
+        font-size: $fs-3;
+    }
+    &-4 {
+        font-size: $fs-4;
+    }
+    &-5 {
+        font-size: $fs-5;
+    }
+    &-6 {
+        font-size: $fs-6;
+    }
+}
+
+// display
+.d {
+    &-flex {
+        display: flex;
+    }
+}
+
+
+// padding
+
+.p {
+    &y-16 {
+        padding: 16px 0;
+    }
+}
+
+
+// margin
