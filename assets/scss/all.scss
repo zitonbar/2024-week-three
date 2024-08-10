@@ -1,5 +1,12 @@
 @import "utils/variables";
 @import "utils/mixin";
 
+@import "base/reset";
+@import "base/base";
+
+@import "layout/header";
+@import "layout/footer";
+
+
 
 @import './pages/index.scss';

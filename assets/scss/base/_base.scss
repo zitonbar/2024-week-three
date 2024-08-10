@@ -1,45 +1,14 @@
 @import '_fontStyle.scss';
 
 body {
-    font-family: serif;
+    font-family:"Roboto","Noto Sans TC",sans-serif;
+    line-height: 1.5;
 }
 a {
     text-decoration: none;
 }
 img {
     max-width: 100%;
-    vertical-align: middle;
     height: auto;
+    vertical-align: middle;
 }
-
-.container {
-    max-width: 1320px;
-    padding: 0 12px;
-    margin: 0 auto;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -12px;
-    margin-right: -12px;
-}
-
-.col {
-    padding-left: 12px;
-    padding-right: 12px;
-    &-3 {
-        width: 25%;
-    }
-    @include table {
-        .col-md-6 {
-            width: 50%;
-        }
-    }
-    @include mobile {
-        .col-sm-12 {
-            width: 100%;
-        }
-    }
-}
-
