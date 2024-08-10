@@ -31,16 +31,15 @@ img {
     &-3 {
         width: 25%;
     }
-}
-
-@include table {
-    .col-md-6 {
-        width: 50%;
+    @include table {
+        .col-md-6 {
+            width: 50%;
+        }
+    }
+    @include mobile {
+        .col-sm-12 {
+            width: 100%;
+        }
     }
 }
 
-@include mobile {
-    .col-sm-12 {
-        width: 100%;
-    }
-}
