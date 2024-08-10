@@ -8,13 +8,17 @@
     }
 }
 
-//color
 .text {
+    //color
     &-white {
         color: $light-color;
     }
     &danger {
         color: $danger-color;
+    }
+    // text-align
+    &-center {
+        text-align: center;
     }
 }
 
@@ -51,43 +55,92 @@
 // padding
 
 .p {
-    &x-8 {
-        padding-top: 8px;
-        padding-bottom: 8px;
+    &x {
+        &-8 {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+        &-16 {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        &-32 {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+        &-sm-0 {
+            @include mobile {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+        &-sm-32 {
+            @include mobile {
+                padding-left: 32px;
+                padding-right: 32px;
+            }
+        }
+        &-sm-14 {
+            @include mobile {
+                padding-left: 14px;
+                padding-right: 14px;
+            }
+        }
     }
-    &x-16 {
-        padding-top: 16px;
-        padding-bottom: 16px;
+    &y {
+        &-12 {
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+        &-16 {
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+        &-32 {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+        &-80 {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+        &-sm-12  {
+            @include mobile {
+                padding-top: 12px;
+                padding-bottom: 12px;
+            }
+        }
+
     }
-    &x-32 {
-        padding-left: 32px;
-        padding-right: 32px;
+    &t {
+        &-48 {
+            padding-top: 48px;
+        }
+        &-sm-12 {
+            @include mobile {
+                padding-top: 12px;
+            }
+        }
     }
-    &y-12 {
-        padding-top: 12px;
-        padding-bottom: 12px;
+    &b {
+        &-32 {
+            padding-bottom: 32px;
+        }
     }
-    &y-16 {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-    &y-32 {
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-    &y-80 {
-        padding: 80px 0;
-    }
-    &t-48 {
-        padding-top: 80px;
-    }
-    &b-32 {
-        padding-bottom: 32px;
-    }
-    &l-32 {
-        padding-left: 32px;
+    &l {
+        &-32 {
+            padding-left: 32px;
+        }
     }
 }
 
 
 // margin
+
+
+// border
+@include mobile{
+    .border-1 {
+        border: 1px solid $light-color;
+    }   
+}

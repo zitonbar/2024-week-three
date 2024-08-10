@@ -1,7 +1,16 @@
 .container {
     max-width: 1320px;
-    padding: 0 12px;
+    padding-left: 12px;
+    padding-right: 12px;
     margin: 0 auto;
+    @include table {
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+    @include mobile {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
 }
 
 .row {
@@ -9,6 +18,14 @@
     flex-wrap: wrap;
     margin-left: -12px;
     margin-right: -12px;
+    @include table  {
+        margin-left: -36px;
+        margin-right: -36px;
+    }
+    @include mobile {
+        margin-left: -14px;
+        margin-right: -14px;
+    }
 }
 
 .col {
@@ -25,6 +42,7 @@
     }
 }
 
+
 @include table {
     .col-md-6 {
         width: 50%;
@@ -34,7 +52,18 @@
     .col-sm-12 {
         width: 100%;
     }
+    .col-sm-6 {
+        width: 50%;
+    }
+    .col-sm-px-0 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .flex-sm-wrap {
+        flex-wrap: wrap;
+    }
 }
+
 
 .justify-content-center {
     justify-content: center;
