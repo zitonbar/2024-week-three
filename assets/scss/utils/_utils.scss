@@ -22,6 +22,7 @@
     }
 }
 
+
 // font-size
 .fs {
     &-1 {
@@ -42,27 +43,22 @@
     &-6 {
         font-size: $fs-6;
     }
-    &-7 {
-        font-size: $fs-7;
+    &-md-3 {
+        @include table {
+            font-size: $fs-3;
+        }
+    }
+    &-sm-6 {
+        @include mobile {
+            font-size: $fs-7;
+        }
     }
 }
-@include mobile {
-    .fs-sm-6 {
-        font-size: $fs-6;
-    }
-}
-
-// display
-.d {
-    &-flex {
-        display: flex;
-    }
-}
-
 
 // padding
 
 .p {
+    // padding x
     &x {
         &-8 {
             padding-left: 8px;
@@ -76,16 +72,11 @@
             padding-left: 32px;
             padding-right: 32px;
         }
+        // padding x RWD
         &-sm-0 {
             @include mobile {
                 padding-left: 0;
                 padding-right: 0;
-            }
-        }
-        &-sm-32 {
-            @include mobile {
-                padding-left: 32px;
-                padding-right: 32px;
             }
         }
         &-sm-14 {
@@ -94,7 +85,14 @@
                 padding-right: 14px;
             }
         }
+        &-sm-32 {
+            @include mobile {
+                padding-left: 32px;
+                padding-right: 32px;
+            }
+        }
     }
+    // padding y
     &y {
         &-12 {
             padding-top: 12px;
@@ -112,62 +110,103 @@
             padding-top: 80px;
             padding-bottom: 80px;
         }
-        &-sm-12  {
+        // padding y RWD
+        &-sm-12 {
             @include mobile {
                 padding-top: 12px;
                 padding-bottom: 12px;
             }
         }
-
     }
+    // padding top
     &t {
         &-60 {
-            margin-top: 60px;
+            padding-top: 60px;
         }
         &-48 {
             padding-top: 48px;
         }
+        &-32 {
+            padding-top: 23px;
+        }
+        // padding top RWD
         &-sm-12 {
             @include mobile {
                 padding-top: 12px;
             }
         }
     }
+    // padding bottom
     &b {
         &-32 {
             padding-bottom: 32px;
         }
     }
+    // padding left
     &l {
         &-32 {
             padding-left: 32px;
         }
     }
 }
-
+// RWD padding 
+// @include mobile {
+//     .p {
+//         &x {
+//             &-sm-0 {
+//                 padding-left: 0;
+//                 padding-right: 0;
+//             }
+//             &-sm-14 {
+//                 padding-left: 14px;
+//                 padding-right: 14px;
+//             }
+//             &-sm-32 {
+//                 padding-left: 32px;
+//                 padding-right: 32px;
+//             }
+//         }
+//         &y {
+//             &-sm-12 {
+//                 padding-top: 12px;
+//                 padding-bottom: 12px;
+//             }
+//         }
+//         &t {
+//             &-sm-12 {
+//                 padding-top: 12px;
+//             }
+//         }
+//     }
+// }
 
 // margin
 .m {
+    // margin right
     &r-10 {
         margin-right: 10px;
     }
     &r-48 {
         margin-right: 48px;
     }
+    // margin bottom
     &b-24 {
         margin-bottom: 24px;
     }
+    // margin left
     &l-32 {
         margin-left: 32px;
     }
 }
 
 // border
-.border-top {
-    border-top: 1px solid $light-color;
-}
-@include mobile{
-    .border-1 {
-        border: 1px solid $light-color;
-    }   
+.border {
+    &-top {
+        border-top: 1px solid $light-color;
+    }
+    &-1 {
+        @include mobile {
+            border: 1px solid $light-color;
+        }
+    }
 }
