@@ -22,6 +22,17 @@
     }
 }
 
+// display 
+.d-block {
+    display: block;
+}
+.d {
+    &-sm-block {
+        @include mobile {
+            display: block;
+        }
+    }
+}
 
 // font-size
 .fs {
@@ -127,12 +138,22 @@
             padding-top: 48px;
         }
         &-32 {
-            padding-top: 23px;
+            padding-top: 32px;
         }
         // padding top RWD
+        &-sm-8 {
+            @include mobile {
+                padding-top: 8px;
+            }
+        }
         &-sm-12 {
             @include mobile {
                 padding-top: 12px;
+            }
+        }
+        &-sm-16 {
+            @include mobile {
+                padding-top: 16px;
             }
         }
     }
@@ -140,6 +161,11 @@
     &b {
         &-32 {
             padding-bottom: 32px;
+        }
+        &-sm-24 {
+            @include mobile {
+                padding-bottom: 24px;
+            }
         }
     }
     // padding left
@@ -166,9 +192,23 @@
         margin-bottom: 24px;
     }
     // margin left
-    &l-32 {
-        margin-left: 32px;
+    &l{
+        &-32 {
+            margin-left: 32px;
+        }
+        // margin left RWD
+        &-md-16 {
+            @include table {
+                margin-left: 16px;
+            }
+        }
+        &-sm-8 {
+            @include mobile {
+                margin-left: 8px;
+            }
+        }
     }
+    
 }
 
 // border

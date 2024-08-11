@@ -64,10 +64,22 @@
         }
     }
 }
-
-.d-flex {
-    display: flex;
+.width {
+    &-48 {
+        width: 48px;
+    }
+    &-md-40 {
+        @include table {
+            width: 40px;
+        }
+    }
+    &-sm-24 {
+        @include mobile {
+            width: 24px;
+        }
+    }
 }
+
 .d {
     &-flex {
         display: flex;
@@ -81,6 +93,11 @@
 .flex-sm-wrap {
     @include mobile {
         flex-wrap: wrap;
+    }
+}
+.flex-sm-column {
+    @include mobile {
+        flex-direction: column;
     }
 }
 
