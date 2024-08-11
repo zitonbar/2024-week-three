@@ -13,12 +13,15 @@
     &-white {
         color: $light-color;
     }
-    &danger {
+    &-danger {
         color: $danger-color;
     }
     // text-align
     &-center {
         text-align: center;
+    }
+    &-right {
+        text-align: right;
     }
 }
 
@@ -64,6 +67,9 @@
             font-size: $fs-7;
         }
     }
+}
+.fw-bold {
+    font-weight: bold;
 }
 
 // padding
@@ -193,6 +199,9 @@
     }
     // margin left
     &l{
+        &-auto {
+            margin-left: auto;
+        }
         &-32 {
             margin-left: 32px;
         }

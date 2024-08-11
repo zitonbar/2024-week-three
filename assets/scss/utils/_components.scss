@@ -1,9 +1,27 @@
 .btn {
-    width: 104px;
-    height: 41px;
-    font-size: $fs-5;
+    font-size: $font-base;
+    display: block;
     &-primary {
         background: $primary-color;
         color: $light-color;
+    }
+    &-small {
+        width: 104px;
+        height: 41px;
+        font-size:  $fs-6;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    &-big {
+        width: 416px;
+        height: 56px;
+        @include table {
+            width: 336px;
+        }
+        @include mobile {
+            width: 100%;
+        }
     }
 }
