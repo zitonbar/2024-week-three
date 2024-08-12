@@ -6,11 +6,17 @@
     &-secondary {
         background: $secondary-color;
     }
+    &-light {
+        background: $light-color;
+    }
 }
 
 .text {
-    //color
-    &-white {
+    // color
+    &-primary {
+        color: $primary-color;
+    }
+    &-light {
         color: $light-color;
     }
     &-danger {
@@ -62,14 +68,33 @@
             font-size: $fs-3;
         }
     }
-    &-sm-6 {
+    &-sm-5 {
+        @include mobile {
+            font-size: $fs-5;
+        }
+    }
+    &-sm-7 {
         @include mobile {
             font-size: $fs-7;
         }
     }
+    &-italic {
+        font-style: italic;
+    }
 }
-.fw-bold {
-    font-weight: bold;
+
+// font-weight
+
+.fw {
+    &-Medium {
+        font-weight: 500;
+    }
+    &-bold {
+        font-weight: 700;
+    }
+    &-black {
+        font-weight: 900;
+    }
 }
 
 // padding
@@ -127,6 +152,10 @@
             padding-top: 80px;
             padding-bottom: 80px;
         }
+        &-296 {
+            padding-top: 296px;
+            padding-bottom: 296px;
+        }
         // padding y RWD
         &-sm-12 {
             @include mobile {
@@ -134,17 +163,29 @@
                 padding-bottom: 12px;
             }
         }
+        &-sm-40 {
+            @include mobile {
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+        }
+        &-sm-144 {
+            @include mobile {
+                padding-top: 144px;
+                padding-bottom: 144px;
+            }
+        }
     }
     // padding top
     &t {
-        &-60 {
-            padding-top: 60px;
+        &-32 {
+            padding-top: 32px;
         }
         &-48 {
             padding-top: 48px;
         }
-        &-32 {
-            padding-top: 32px;
+        &-60 {
+            padding-top: 60px;
         }
         // padding top RWD
         &-sm-8 {
@@ -163,10 +204,41 @@
             }
         }
     }
+    // padding right 
+    &r {
+        &-0 {
+            padding-right: 0;
+        }
+    }
     // padding bottom
     &b {
+        &-4 {
+            padding-bottom: 4px;
+        }
+        &-8 {
+            padding-bottom: 8px;
+        }
+        &-16 {
+            padding-bottom: 16px;
+        } 
         &-32 {
             padding-bottom: 32px;
+        }
+        &-48 {
+            padding-bottom: 48px;
+        }
+        &-sm-8 {
+            padding-bottom: 8px;
+        }
+        &-md-24 {
+            @include table {
+                padding-bottom: 24px;
+            }
+        }
+        &-sm-16 {
+            @include mobile {
+                padding-bottom: 16px;
+            }
         }
         &-sm-24 {
             @include mobile {
@@ -176,6 +248,9 @@
     }
     // padding left
     &l {
+        &-0 {
+            padding-left: 0;
+        }
         &-32 {
             padding-left: 32px;
         }

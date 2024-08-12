@@ -1,5 +1,22 @@
 .banner-background {
-    background-image: url(/assets/images/home-header.png);
+    background-image: url(../../assets/images/home-header.png);
     background-size: cover;
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;
+    background-position: center;
+    // @include table {
+    //     max-width: 768px;
+    //     height: 787px;
+    // }
+    @include mobile {
+        // background-image: url(/assets//images/home-header-sm.png);
+        // max-width: 375px;
+        // height: 396px;
+    }
+}
+.section-background {
+    background-image: url(../../assets/images/index-bg.png);
+    // background-image: url(../../assets/image/index.-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
