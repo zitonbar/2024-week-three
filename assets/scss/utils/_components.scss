@@ -14,10 +14,9 @@
         padding-right: 12px;
     }
     &-big {
-        width: 416px;
-        height: 56px;
+        width: 65.408%;
         @include table {
-            width: 336px;
+            width: 58.333%;
         }
         @include mobile {
             width: 100%;

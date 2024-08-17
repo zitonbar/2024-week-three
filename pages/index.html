@@ -89,34 +89,42 @@
         <ul class="row">
           <li class="col col-3 col-md-6 col-sm-12 pb-md-24 pb-sm-16">
             <img src="../assets/images/home-section5-1.png" alt="">
-            <div class="p-16">
+            <div class="p-16 d-flex flex-column height-205 border-light-gray box-shadow">
               <h5 class="fw-Medium pb-8">Jessy</h5>
               <p>眼鏡品質優良，下次還會想來這邊購買！</p>
-              <span class="text-gray">2021/06/20</span>
+              <div class="mt-auto">
+                <time class="text-gray">2021/06/20</time>
+              </div>
             </div>
           </li>
           <li class="col col-3 col-md-6 col-sm-12 pb-md-24 pb-sm-16">
             <img src="../assets/images/home-section5-2.png" alt="">
-            <div class="p-16">
+            <div class="p-16 d-flex flex-column height-205 border-light-gray box-shadow">
               <h5 class="fw-Medium pb-8">凱倫</h5>
               <p>使工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家!</p>
-              <span class="text-gray">2021/04/18</span>
+              <div class="mt-auto">
+                <time class="text-gray">2021/04/18</time>
+              </div>
             </div>
           </li>
           <li class="col col-3 col-md-6 col-sm-12 pb-md-24 pb-sm-16">
             <img src="../assets//images/home-section5-3.png" alt="">
-            <div class="p-16">
+            <div class="p-16 d-flex flex-column height-205 border-light-gray box-shadow">
               <h5 class="fw-Medium pb-8">悠悠</h5>
               <p>謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
-              <span class="text-gray">2020/12/25</span>
+              <div class="mt-auto">
+                <time class="text-gray">2020/12/25</time>
+              </div>
             </div>
           </li>
           <li class="col col-3 col-md-6 col-sm-12 pb-md-24 pb-sm-16">
             <img src="../assets/images/home-section5-4.png" alt="">
-            <div class="p-16">
+            <div class="p-16 d-flex flex-column height-205 border-light-gray box-shadow">
               <h5 class="fw-Medium pb-8">Kyuan</h5>
               <p>服務很好，品質沒有任何問題，非常喜歡。</p>
-              <span class="text-gray">2020/10/31</span>
+              <div class="mt-auto">
+                <time class="text-gray">2020/10/31</time>
+              </div>
             </div>
           </li>
         </ul>
@@ -124,9 +132,29 @@
     </section>
     <section class="bg-secondary py-80 py-sm-40">
       <div class="container">
+        <h2 class="text-danger fs-2 fs-sm-5 fw-bold text-center pb-48 pb-sm-24">聯絡我們</h2>
         <div class="row">
-          <div class="col-6 text-center">
-            
+          <div class="col col-6 col-md-10 col-sm-12 mx-auto">
+            <p class="fs-6 fs-sm-7 mb-24">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-6 col-md-10 col-sm-12 mx-auto">
+            <form class="d-flex flex-column" action="">
+              <label class="mb-8" for="name">姓名</label>
+              <input class="mb-16 py-6 px-12" type="text" id="name" placeholder="陳小明">
+              <label class="mb-8" for="telphone">聯絡電話</label>
+              <input class="mb-16 py-6 px-12" type="tel" id="telphone" placeholder="0912-345-678">
+              <label class="mb-8" for="email">電子郵件</label>
+              <input class="mb-16 py-6 px-12" type="email" id="email" placeholder="example@email.com">
+              <label class="mb-8" for="message">意見反應</label>
+              <textarea class="mb-16 py-6 px-12" name="message" id="message" cols="30" rows="8" placeholder="請輸入您的意見"></textarea>
+              <div>
+                <input type="checkbox" id="agree">
+                <label for="agree">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+              </div>
+              <a href="" class="btn btn-primary btn-big text-center fs-5 py-16 mx-auto mt-48 mt-sm-24">確認送出</a>
+            </form>
           </div>
         </div>
       </div>

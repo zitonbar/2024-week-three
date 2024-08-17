@@ -53,6 +53,11 @@
             width: 50%;
         }
     }
+    &-md-10 {
+        @include table {
+            width: 83.333%;
+        }
+    }
     &-md-12 {
         @include table {
             width: 100%;
@@ -95,6 +100,9 @@
         }
     }
 }
+.height-205 {
+    height: 205px;
+}
 
 .d {
     &-flex {
@@ -106,19 +114,29 @@
         }
     }
 }
-.flex-md-wrap {
-    @include table {
-        flex-wrap: wrap;
-    }
-}
-.flex-sm-wrap {
-    @include mobile {
-        flex-wrap: wrap;
-    }
-}
-.flex-sm-column {
-    @include mobile {
+.flex {
+    &-column {
         flex-direction: column;
+    }
+    &-md {
+        &-wrap {
+            @include table {
+                flex-wrap: wrap;
+            }
+        }
+
+    }
+    &-sm {
+        &-wrap {
+            @include mobile {
+                flex-wrap: wrap;
+            }
+        }
+        &-column {
+            @include mobile {
+                flex-direction: column;
+            }
+        }
     }
 }
 
