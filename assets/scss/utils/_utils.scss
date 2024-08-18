@@ -162,6 +162,10 @@
             padding-top: 32px;
             padding-bottom: 32px;
         }
+        &-40 {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
         &-80 {
             padding-top: 80px;
             padding-bottom: 80px;
@@ -202,19 +206,26 @@
             padding-top: 60px;
         }
         // padding top RWD
-        &-sm-8 {
-            @include mobile {
-                padding-top: 8px;
+        &-sm {
+            &-8 {
+                @include mobile {
+                    padding-top: 8px;
+                }
             }
-        }
-        &-sm-12 {
-            @include mobile {
-                padding-top: 12px;
+            &-12 {
+                @include mobile {
+                    padding-top: 12px;
+                }
             }
-        }
-        &-sm-16 {
-            @include mobile {
-                padding-top: 16px;
+            &-16 {
+                @include mobile {
+                    padding-top: 16px;
+                }
+            }
+            &-24 {
+                @include mobile {
+                    padding-top: 24px;
+                }
             }
         }
     }
@@ -264,6 +275,9 @@
     &l {
         &-0 {
             padding-left: 0;
+        }
+        &-16 {
+            padding-left: 16px;
         }
         &-32 {
             padding-left: 32px;
@@ -316,6 +330,16 @@
         &-24 {
             margin-bottom: 24px;
         }
+        &-32 {
+            margin-bottom: 32px;
+        }
+        &-sm {
+            &-24 {
+                @include mobile {
+                    margin-bottom: 24px;
+                }
+            }
+        }
     }
     // margin left
     &l{
@@ -343,11 +367,21 @@
 // border
 .border {
     &-light {
+        &-1 {
+            @include mobile {
+                border: 1px solid $light-color;
+            }
+        }
         &-top {
             border-top: 1px solid $light-color;
         }
         &-gray {
             border: 1px solid $light-gray-color;
+        }
+    }
+    &-primary {
+        &-left {
+            border-left: 8px solid $dark-primary-color;
         }
     }
 }
