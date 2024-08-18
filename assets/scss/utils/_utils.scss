@@ -66,19 +66,28 @@
     &-6 {
         font-size: $fs-6;
     }
-    &-md-3 {
-        @include table {
-            font-size: $fs-3;
+    &-md {
+        &-3 {
+            @include table {
+                font-size: $fs-3;
+            }
+        }
+        &-5 {
+            @include table {
+                font-size: $fs-5;
+            }
         }
     }
-    &-sm-5 {
-        @include mobile {
-            font-size: $fs-5;
+    &-sm {
+        &-5 {
+            @include mobile {
+                font-size: $fs-5;
+            }
         }
-    }
-    &-sm-7 {
-        @include mobile {
-            font-size: $fs-7;
+        &-7 {
+            @include mobile {
+                font-size: $fs-7;
+            }
         }
     }
     &-italic {
@@ -158,6 +167,10 @@
             padding-top: 16px;
             padding-bottom: 16px;
         }
+        &-24 {
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
         &-32 {
             padding-top: 32px;
             padding-bottom: 32px;
@@ -170,27 +183,39 @@
             padding-top: 80px;
             padding-bottom: 80px;
         }
+        &-148 {
+            padding-top: 148px;
+            padding-bottom: 148px;
+        }
         &-296 {
             padding-top: 296px;
             padding-bottom: 296px;
         }
         // padding y RWD
-        &-sm-12 {
-            @include mobile {
-                padding-top: 12px;
-                padding-bottom: 12px;
+        &-sm {
+            &-12 {
+                @include mobile {
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+                }
             }
-        }
-        &-sm-40 {
-            @include mobile {
-                padding-top: 40px;
-                padding-bottom: 40px;
+            &-40 {
+                @include mobile {
+                    margin-top: 40px;
+                    margin-bottom: 40px;
+                }
             }
-        }
-        &-sm-144 {
-            @include mobile {
-                padding-top: 144px;
-                padding-bottom: 144px;
+            &-68 {
+                @include mobile {
+                    padding-top: 68px;
+                    padding-bottom: 68px;
+                }
+            }
+            &-144 {
+                @include mobile {
+                    margin-top: 144px;
+                    padding-bottom: 144px;
+                }
             }
         }
     }

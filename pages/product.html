@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>眼鏡官網</title>
+</head>
+<body>
+    
+    <%- include('./layout/header'); -%>
+
+    <div class="container">
+        <ul class="row">
+            <li class="col col-4 border-light-gray py-24">
+                <a class="fs-4 fs-md-5 fs-sm-7 fw-Medium text-center" href="#">OPTICAL</a>
+            </li>
+            <li class="col col-4 border-light-gray py-24">
+                <a class="fs-4 fs-md-5 fs-sm-7 fw-Medium text-center" href="#">SUNGLASSES</a>
+            </li>
+            <li class="col col-4 border-light-gray py-24">
+                <a class="fs-4 fs-md-5 fs-sm-7 fw-Medium text-center" href="#">FUNCTIONAL</a>
+            </li>
+        </ul>
+    </div>
+    <section class="d-flex justify-content-center text-center">
+        <picture>
+            <!-- 当视口宽度小于或等于 992px 时，显示特定图片 -->
+            <source media="(max-width: 992px)" srcset="../assets/images/product-header-sm-1.png">
+            <img src="../assets/images/product-header-1.png" alt="A scenic view of the mountains">
+        </picture>
+        <picture>
+            <!-- 当视口宽度小于或等于 992px 时，显示特定图片 -->
+            <source media="(max-width: 992px)" srcset="../assets/images/product-header-sm-2.png">
+            <img src="../assets/images/product-header-2.png" alt="A scenic view of the mountains">
+        </picture>
+    </section>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+
+</body>
+</html>
